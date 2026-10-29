@@ -211,23 +211,27 @@ def solve_forced_coarse(model, initial_state, forcing, config=None, *, callback=
     cfg = config or CoarseConfig()
     if cfg.tolerance <= 0 or cfg.constraint_trace_tolerance <= 0 or cfg.max_iterations < 1:
         raise ValueError('Invalid coarse solver settings')
-    # This forcing is fixed for the entire coarse call, so its auxiliary
-    # correction is solved once, not during every Newton/line-search trial.
-    pair_corrections = tuple(model.space.forcing_correction(b) for b in forcing.pairs)
-    if rebuild_initial:
-        state, residual = model.rebuild(initial_state.orbitals, forcing,
-            pair_corrections=pair_corrections, return_residual=True)
-    else:
-        state = initial_state.copy()
-        residual = model.residual(state, forcing)
-    model.validate(state)
-    if not rebuild_initial and residual.block_norms(model.space)['pair'] > 1e-10:
-        raise ValueError('Eliminated-pair Newton requires a pair-consistent initial state')
-    coordinates = ReducedCoordinates(model, cfg.dense_limit)
-    history = []
     def converged(residual):
         trace_error=sum(abs(w*np.trace(g)) for w,g in zip(model.molecule.weights,residual.grams))
         return residual.norm(model.space)<cfg.tolerance and trace_error<cfg.constraint_trace_tolerance
+    # Test the complete supplied state before elimination or Gram restoration:
+    # those operations can perturb an exact forced solution or reject an
+    # otherwise admissible Gram through an ill-conditioned intermediate root.
+    state = initial_state.copy()
+    residual = model.residual(state, forcing)
+    input_converged = converged(residual)
+    # This forcing is fixed for the entire coarse call, so its auxiliary
+    # correction is solved once, not during every Newton/line-search trial.
+    pair_corrections = (() if input_converged else
+                        tuple(model.space.forcing_correction(b) for b in forcing.pairs))
+    if rebuild_initial and not input_converged:
+        state, residual = model.rebuild(initial_state.orbitals, forcing,
+            pair_corrections=pair_corrections, return_residual=True)
+    model.validate(state)
+    if not rebuild_initial and not input_converged and residual.block_norms(model.space)['pair'] > 1e-10:
+        raise ValueError('Eliminated-pair Newton requires a pair-consistent initial state')
+    coordinates = ReducedCoordinates(model, cfg.dense_limit)
+    history = []
     for iteration in range(cfg.max_iterations+1):
         blocks = residual.block_norms(model.space); merit=blocks['total']
         trace_error=float(sum(abs(w*np.trace(g)) for w,g in zip(model.molecule.weights,residual.grams)))

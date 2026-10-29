@@ -2,8 +2,8 @@
 
 HF_FAS_GS_BACKEND=python selects the reference implementation; numba requires
 the optional accelerator, and auto (default) uses it when installed. No
-parallel updates or fast-math transformations are used. A singular block
-hands the unmodified current row back to the reference least-squares path.
+parallel updates or fast-math transformations are used. A numerically rank-deficient
+block hands the unmodified current row back to the reference least-squares path.
 """
 import os
 import numpy as np
@@ -12,6 +12,9 @@ try:
     from numba import njit
 except ImportError:
     njit = None
+
+
+_LOCAL_RCOND = 1e-12
 
 
 def backend():
@@ -32,10 +35,11 @@ def _reference(data, indices, indptr, rhs, x, weight, start_row=0):
             raise RuntimeError('Orbital block matrix has no unique point diagonal')
         local = blocks[diagonal[0]]
         defect = rhs[row]-np.einsum('bij,bj->i', blocks, x[columns])
-        try:
+        singular = np.linalg.svd(local, full_matrices=False)[1]
+        if singular[-1] > _LOCAL_RCOND*singular[0]:
             step = np.linalg.solve(local, defect)
-        except np.linalg.LinAlgError:
-            step = np.linalg.lstsq(local, defect, rcond=1e-12)[0]
+        else:
+            step = np.linalg.lstsq(local, defect, rcond=_LOCAL_RCOND)[0]
         x[row] += weight*step
 
 
@@ -58,10 +62,10 @@ def _compiled_impl(data, indices, indptr, rhs, x, weight):
                 diagonal = entry
         if diagonal == -1:
             raise RuntimeError('Orbital block matrix has no unique point diagonal')
-        try:
-            step = np.linalg.solve(data[diagonal], defect)
-        except Exception:
+        singular = np.linalg.svd(data[diagonal], full_matrices=False)[1]
+        if singular[-1] <= _LOCAL_RCOND*singular[0]:
             return row+1
+        step = np.linalg.solve(data[diagonal], defect)
         for i in range(count):
             x[row, i] += weight*step[i]
     return 0

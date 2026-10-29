@@ -11,8 +11,8 @@ def symmetric_trial_matrix(matrix):
     """Remove roundoff skew from a mathematically symmetric computed matrix."""
     if not np.isfinite(matrix).all():
         raise InvalidTrialState('Nonfinite computed trial matrix')
-    scale=max(1.,float(np.max(abs(matrix)))) if matrix.size else 1.
-    if matrix.size and np.linalg.norm(matrix-matrix.T,ord=np.inf)>128*np.finfo(float).eps*scale*len(matrix):
+    scale=max(1.,float(np.linalg.norm(matrix,ord='fro')))
+    if matrix.size and np.linalg.norm(matrix-matrix.T,ord='fro')>128*np.finfo(float).eps*scale*len(matrix):
         raise InvalidTrialState('Computed trial matrix lost numerical symmetry')
     return .5*matrix+.5*matrix.T
 

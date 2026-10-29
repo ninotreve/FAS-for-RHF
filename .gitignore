@@ -48,7 +48,14 @@ regression-results.xml
 paper/siamart*.cls
 paper/siamplain.bst
 
-# Keep manuscript and publication assets outside the public code repository.
+# Local manuscript and manuscript-only tooling must never enter the public repository.
 paper/
 *.tex
 *.bib
+/AI_LOG.md
+/CLEANUP.md
+/docs/current_method.md
+/docs/bh_l5_same_node_20261029.md
+/scripts/build_paper_current_results.py
+/scripts/plot_l4_phase_panels.py
+/tests/test_paper_evidence.py

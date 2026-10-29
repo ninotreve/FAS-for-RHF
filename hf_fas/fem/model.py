@@ -10,7 +10,7 @@ from .records import WorkCounter, timed
 def symmetric_power(matrix, exponent):
     if matrix.size == 0:
         return matrix.copy()
-    if not np.allclose(matrix, matrix.T, rtol=0, atol=1e-11):
+    if not np.isfinite(matrix).all() or np.linalg.norm(matrix-matrix.T,ord='fro') > 1e-11*len(matrix):
         raise ValueError('Gram target is not symmetric')
     values, vectors = eigh(matrix)
     if values[0] <= 0 or values[-1]/values[0] > 1e12:
@@ -112,7 +112,10 @@ class MolecularFEMModel:
                 raise ValueError('Molecular state dimensions differ from FEM spaces/occupations')
             if not all(np.isfinite(x).all() for x in (p, w, l)):
                 raise ValueError('Nonfinite molecular state')
-            if not np.allclose(w, w.swapaxes(-1, -2), atol=1e-11, rtol=0) or not np.allclose(l, l.T, atol=1e-11, rtol=0):
+            # Frobenius skew norms preserve the symmetry tolerance under
+            # occupied rotations; check each spatial pair matrix separately.
+            if (np.any(np.linalg.norm(w-w.swapaxes(-1, -2),axis=(-2,-1)) > 1e-11*count)
+                or np.linalg.norm(l-l.T,ord='fro') > 1e-11*count):
                 raise ValueError('Pair family and multipliers must be symmetric')
 
     def gram(self, orbitals):
@@ -132,8 +135,8 @@ class MolecularFEMModel:
         except ValueError as exc:
             raise InvalidTrialState('Numerically inadmissible Gram restoration') from exc
         restored=orbitals @ right
-        error=np.linalg.norm(self.gram(restored)-target,ord=np.inf)
-        if not np.isfinite(error) or error>1e-10*max(1.,np.linalg.norm(target,ord=np.inf)):
+        error=np.linalg.norm(self.gram(restored)-target,ord='fro')
+        if not np.isfinite(error) or error>1e-10*max(1.,np.linalg.norm(target,ord='fro')):
             raise InvalidTrialState('Trial Gram restoration failed its numerical target check')
         return restored
 

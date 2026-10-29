@@ -57,7 +57,7 @@ srun --cpus-per-task=8 --mem=256G --time=24:00:00 \
   --output results/CH4-L5
 ```
 
-These are fresh runs using the preserved numerical algorithms. They regenerate starts and references rather than downloading historical checkpoint arrays; bitwise input identity, exact iteration counts and original wall times are not guaranteed. Retain the generated source hashes, runtime versions and inputs when comparing runs. The historical output snapshots allow checking the paper's reported counts without rerunning every expensive experiment.
+These are fresh runs using the current implementation. The recorded experiments used an earlier frozen implementation; later safeguards for rank-deficient local blocks and exact forced coarse fixed points can alter numerical trajectories. Fresh runs regenerate starts and references rather than downloading historical checkpoint arrays, so bitwise input identity, exact iteration counts and original wall times are not guaranteed. Retain the generated source hashes, runtime versions and inputs when comparing runs. The historical output snapshots allow checking the paper's reported counts without rerunning every expensive experiment.
 
 ## Outputs, checks and cost accounting
 
