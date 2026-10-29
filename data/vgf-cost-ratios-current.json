@@ -1,0 +1,1137 @@
+{
+  "rows": [
+    {
+      "case": "LiH-L3",
+      "system": "LiH",
+      "level": 3,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.8532161257232835,
+          "SCF": 3.6237856491202503
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.1774253043157505,
+          "SCF": 8.000983646870774
+        }
+      }
+    },
+    {
+      "case": "LiH-L4",
+      "system": "LiH",
+      "level": 4,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.6168213828124639,
+          "SCF": 2.925764003768661
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.8153962865121084,
+          "SCF": 7.492830740922077
+        }
+      }
+    },
+    {
+      "case": "LiH-L5",
+      "system": "LiH",
+      "level": 5,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.7966040769576715,
+          "SCF": 3.042314459322578
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.0726445889272345,
+          "SCF": 7.815878115808971
+        }
+      }
+    },
+    {
+      "case": "Li2-L3",
+      "system": "Li2",
+      "level": 3,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.9572715426406267,
+          "SCF": 3.2260789476384875
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.1856405002774577,
+          "SCF": 7.14252785247791
+        }
+      }
+    },
+    {
+      "case": "Li2-L4",
+      "system": "Li2",
+      "level": 4,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 1.0366619595563331,
+          "SCF": 3.5178313008966184
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.2511382098835326,
+          "SCF": 8.197112409581765
+        }
+      }
+    },
+    {
+      "case": "Li2-L5",
+      "system": "Li2",
+      "level": 5,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.7733128232269203,
+          "SCF": 2.6272808545203388
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.1507775984832778,
+          "SCF": 7.786928416403512
+        }
+      }
+    },
+    {
+      "case": "BeHplus-L3",
+      "system": "BeHplus",
+      "level": 3,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.6718493058194381,
+          "SCF": 2.4695418868436794
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.8527835534600403,
+          "SCF": 5.300377778428558
+        }
+      }
+    },
+    {
+      "case": "BeHplus-L4",
+      "system": "BeHplus",
+      "level": 4,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.7494388466254345,
+          "SCF": 1.9448427543205866
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.9450853714813106,
+          "SCF": 5.076980353078345
+        }
+      }
+    },
+    {
+      "case": "BeHplus-L5",
+      "system": "BeHplus",
+      "level": 5,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.7860507138395791,
+          "SCF": 2.234268966156477
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.9561451371280959,
+          "SCF": 5.427529748991839
+        }
+      }
+    },
+    {
+      "case": "BeH2-L3",
+      "system": "BeH2",
+      "level": 3,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.6983472812677843,
+          "SCF": 2.432418997560671
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.9114575764495837,
+          "SCF": 5.3199360584608355
+        }
+      }
+    },
+    {
+      "case": "BeH2-L4",
+      "system": "BeH2",
+      "level": 4,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.6083043209355674,
+          "SCF": 2.090715766424203
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.8207966449021072,
+          "SCF": 5.706490959795603
+        }
+      }
+    },
+    {
+      "case": "BeH2-L5",
+      "system": "BeH2",
+      "level": 5,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.7356669509723505,
+          "SCF": 2.218393430605442
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.0343779616468098,
+          "SCF": 6.821544316032841
+        }
+      }
+    },
+    {
+      "case": "BH-L3",
+      "system": "BH",
+      "level": 3,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.4995089351526692,
+          "SCF": 1.595798147712815
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.5636310848737056,
+          "SCF": 3.1144230459047066
+        }
+      }
+    },
+    {
+      "case": "BH-L4",
+      "system": "BH",
+      "level": 4,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.8088782064849319,
+          "SCF": 2.32031352094759
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.0125091979396614,
+          "SCF": 5.374540103016924
+        }
+      }
+    },
+    {
+      "case": "BH-L5",
+      "system": "BH",
+      "level": 5,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 1.074425361779285,
+          "SCF": 2.3681246419990623
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.2845054930221653,
+          "SCF": 5.67033956379154
+        }
+      }
+    },
+    {
+      "case": "H2O-L3",
+      "system": "H2O",
+      "level": 3,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 2.8967755263065733,
+          "SCF": 5.015035475093106
+        },
+        "fft_work": {
+          "Newton-horizontal": 3.533246566561122,
+          "SCF": 10.895627343188485
+        }
+      }
+    },
+    {
+      "case": "H2O-L4",
+      "system": "H2O",
+      "level": 4,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 1.0122472163937652,
+          "SCF": 2.353716480740017
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.0297187399821155,
+          "SCF": 4.7431563436760085
+        }
+      }
+    },
+    {
+      "case": "H2O-L5",
+      "system": "H2O",
+      "level": 5,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.7307782879713086,
+          "SCF": 2.1432752815444793
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.8568740618313819,
+          "SCF": 5.406999514802663
+        }
+      }
+    },
+    {
+      "case": "N2-L3",
+      "system": "N2",
+      "level": 3,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 1.0131841449066086,
+          "SCF": 2.6376939351317663
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.4030092955059859,
+          "SCF": 6.3454284046747995
+        }
+      }
+    },
+    {
+      "case": "N2-L4",
+      "system": "N2",
+      "level": 4,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.5632854379149774,
+          "SCF": 1.7134179356862487
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.6989643125702037,
+          "SCF": 4.14578008472272
+        }
+      }
+    },
+    {
+      "case": "N2-L5",
+      "system": "N2",
+      "level": 5,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 0.6097275837387985,
+          "SCF": 1.8366260407007515
+        },
+        "fft_work": {
+          "Newton-horizontal": 0.7181623548940046,
+          "SCF": 4.678256476624865
+        }
+      }
+    },
+    {
+      "case": "CH4-L3",
+      "system": "CH4",
+      "level": 3,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 1.3150172331320247,
+          "SCF": 3.966141085188928
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.5684901531728666,
+          "SCF": 8.165779876386809
+        }
+      }
+    },
+    {
+      "case": "CH4-L4",
+      "system": "CH4",
+      "level": 4,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 1.0153217172357132,
+          "SCF": 2.6956111343515086
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.2411587544352105,
+          "SCF": 6.932598448196672
+        }
+      }
+    },
+    {
+      "case": "CH4-L5",
+      "system": "CH4",
+      "level": 5,
+      "ratios": {
+        "numerical_seconds": {
+          "Newton-horizontal": 1.0537586006860284,
+          "SCF": 2.4224987556856363
+        },
+        "fft_work": {
+          "Newton-horizontal": 1.5059410221213383,
+          "SCF": 7.241531211311867
+        }
+      }
+    }
+  ],
+  "snapshot_sha256": "665055696012f589ba5246229589babd520a9a2c76f167622c3b8ae25731d888",
+  "rerun_sources": {
+    "results/l5_same_node_20261028/solves/LiH-L5/C-response/outcome.json": "3728d542595d1dcbb7b5237864ec2d0590b4a549c657d60dbbb768b51f6219b7",
+    "results/l5_same_node_20261028/solves/LiH-L5/C-response/invocation.json": "e31550f24d1835517940f53eea63d2f5abe0cd2becc67bf16e8b8d2bb372eb67",
+    "results/l5_same_node_20261028/solves/LiH-L5/Newton-horizontal/outcome.json": "021339ee5abb3747342b5901304d3702dee537d24068d3c69edeebc9f4dc7a69",
+    "results/l5_same_node_20261028/solves/LiH-L5/Newton-horizontal/invocation.json": "f0847387610cb4dc4e16acb3eaf2ad20cc1dad1ac6456c83b9663dea1465d86c",
+    "results/l5_same_node_20261028/solves/Li2-L5/Newton-horizontal/outcome.json": "2bb4b774945d4b48bd148463369bdc85408efa3cd0dd3b05db4fedecea1f17af",
+    "results/l5_same_node_20261028/solves/Li2-L5/Newton-horizontal/invocation.json": "a6f8c90ea999a3fce685aebd8cbeb1d83acf55b3540e7a5ed8974ec0faa74592",
+    "results/l5_same_node_20261028/solves/BeHplus-L5/C-response/outcome.json": "241864d309eea9792af20ae02806214ef68ac207da38b40dfcc62189d9e25948",
+    "results/l5_same_node_20261028/solves/BeHplus-L5/C-response/invocation.json": "22a9479a785314c2c8697e5fffed2be22226a4dc3d7c0ac3024ef4638b3432c5",
+    "results/l5_same_node_retry_20261028/solves/Li2-L5/C-response/outcome.json": "c739fc83d32211357c0d2bc2ff7777db9ecf11d4fd137034d4c6b729e6a18d70",
+    "results/l5_same_node_retry_20261028/solves/Li2-L5/C-response/invocation.json": "0ac4c733846218ce012b6ce1c694a9c0bffc291f07131b9ad0d48d6312dd5306",
+    "results/bh_l5_bigmem4_20261029/solves/BH-L5/C-response/outcome.json": "6d6415f02b159e0bddfaa27123d1f90fe791f5ebb786f91ecb19874a96b57197",
+    "results/bh_l5_bigmem4_20261029/solves/BH-L5/C-response/invocation.json": "a63eac601d752a28e10c720443cd5bd39dc30553614cfda43a2b1f62478d80f7",
+    "results/bh_l5_bigmem4_20261029/solves/BH-L5/Newton-horizontal/outcome.json": "4c71084bdc47b3e084e8b1d5440ed0d51d38a4431575c4ff647da54ca7e9f28c",
+    "results/bh_l5_bigmem4_20261029/solves/BH-L5/Newton-horizontal/invocation.json": "09179693cc3f2bf02f890987f372e7b17aab1d83bf15c87a5bfc65c1b26b44d1",
+    "results/required_l5_20261026_v3/solves/BH-L5/SCF/outcome.json": "d834988913c1df65b329ff9a9a313ed5307a5c5420973f56ef61e29c2188eea5",
+    "results/required_l5_20261026_v3/solves/BH-L5/SCF/invocation.json": "1401322ddf8fbcdfd4786330eff9656a7d02ed9ee4ba8859043467aebb18dff1"
+  },
+  "excluded_l5": [],
+  "added_panel_evidence": {
+    "Li2-L5": {
+      "FAS-H": {
+        "source": "results/l5_same_node_retry_20261028/solves/Li2-L5/C-response/outcome.json",
+        "source_sha256": "c739fc83d32211357c0d2bc2ff7777db9ecf11d4fd137034d4c6b729e6a18d70",
+        "invocation_sha256": "0ac4c733846218ce012b6ce1c694a9c0bffc291f07131b9ad0d48d6312dd5306",
+        "host": "bigMem0",
+        "affinity": [
+          8,
+          9,
+          10,
+          11,
+          40,
+          41,
+          42,
+          43
+        ],
+        "job_id": "1033620",
+        "initial_sha256": "58670fb8078eeee05dc1d1339aed36abc436bad9fa5c8f0305a6d1c46627d7f7",
+        "reference_sha256": "57ae1912a92777b61e2aea912b2836132d94479fdc5b1e2dc7ee6ee4c333b420",
+        "qualified": true,
+        "endpoint": {
+          "qualified": true,
+          "residual": 8.780048963837525e-09,
+          "energy_difference": 4.263256414560601e-14,
+          "projector_distance": 2.213067176690033e-08,
+          "relative_density": 9.599195375276952e-10,
+          "electron_count_error": 1.7763568394002505e-15
+        },
+        "precision": {
+          "qualified": true,
+          "kernel_order": null,
+          "kernel_tolerance": 1e-12,
+          "subdivisions": 2,
+          "fmm_tolerance": null,
+          "method": "vgf",
+          "vgf_precompute": "fft",
+          "kernel_control": "DCT_vs_streamed_inverse_FFT_at_fixed_voxel_partition",
+          "raw_residual": {
+            "orbital": 8.780048963836852e-09,
+            "pair": 5.615668708123143e-12,
+            "gram": 3.438388952536542e-15,
+            "total": 8.78005075971201e-09
+          },
+          "rebuilt_residual": {
+            "orbital": 8.780048965412811e-09,
+            "pair": 0.0,
+            "gram": 3.438388952536542e-15,
+            "total": 8.780048965413485e-09
+          },
+          "electronic_energy": -16.32738922107679,
+          "energy_difference": 0.0,
+          "coulomb_backend": "b6cf51911c07af192e18abe185b016c0fa6d831b7909181ffaac11773379d5b8",
+          "work": {
+            "model": {
+              "residual_evaluations": 2,
+              "orbital_actions": 3,
+              "time.orbital_action.calls": 3,
+              "time.orbital_action.inclusive_seconds": 32.41412285994738,
+              "time.orbital_action.exclusive_seconds": 32.41412285994738,
+              "time.residual.calls": 2,
+              "time.residual.inclusive_seconds": 86.98511666245759,
+              "time.residual.exclusive_seconds": 19.989488356746733,
+              "reconstructions": 1,
+              "time.pair_rebuild.calls": 1,
+              "time.pair_rebuild.inclusive_seconds": 37.04407556820661,
+              "time.pair_rebuild.exclusive_seconds": 6.382019376382232,
+              "energy_evaluations": 1,
+              "time.energy.calls": 1,
+              "time.energy.inclusive_seconds": 26.306051434017718,
+              "time.energy.exclusive_seconds": 6.374742468819022
+            },
+            "coulomb": {
+              "time.kernel_cache_wait.calls": 0,
+              "time.kernel_cache_wait.inclusive_seconds": 0.0,
+              "time.kernel_cache_wait.exclusive_seconds": 0.0,
+              "time.kernel_cache_load.calls": 0,
+              "time.kernel_cache_load.inclusive_seconds": 0.0,
+              "time.kernel_cache_load.exclusive_seconds": 0.0,
+              "kernel_cache_hits": 0,
+              "projected_families": 4,
+              "integral_families": 4,
+              "source_rhs": 36,
+              "packed_pair_families": 4,
+              "evaluated_source_rhs": 24,
+              "fft_calls": 8,
+              "time.FFT_convolution.calls": 8,
+              "time.FFT_convolution.inclusive_seconds": 39.729289550334215,
+              "time.FFT_convolution.exclusive_seconds": 39.729289550334215,
+              "time.voxel_projection_and_FFT.calls": 8,
+              "time.voxel_projection_and_FFT.inclusive_seconds": 61.19404368009418,
+              "time.voxel_projection_and_FFT.exclusive_seconds": 21.464754129759967,
+              "time.integral_action.calls": 4,
+              "time.integral_action.inclusive_seconds": 63.304205167107284,
+              "time.integral_action.exclusive_seconds": 2.1101614870131016,
+              "time.projected_potential.calls": 4,
+              "time.projected_potential.inclusive_seconds": 73.92193743214011,
+              "time.projected_potential.exclusive_seconds": 0.0028195856139063835
+            },
+            "mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 2,
+              "time.solve.calls": 2,
+              "time.solve.inclusive_seconds": 1.5107589084655046,
+              "time.solve.exclusive_seconds": 1.5107589084655046
+            },
+            "pair_mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 17,
+              "time.solve.calls": 17,
+              "time.solve.inclusive_seconds": 24.841607647016644,
+              "time.solve.exclusive_seconds": 24.841607647016644
+            },
+            "auxiliary": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 0,
+              "time.solve.calls": 0,
+              "time.solve.inclusive_seconds": 0.0,
+              "time.solve.exclusive_seconds": 0.0
+            },
+            "kinetic": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0
+            }
+          },
+          "scope": "Independent endpoint validation, excluded from application timing"
+        },
+        "iterations": 8,
+        "numerical_seconds": 4631.154097683728,
+        "fft_work": 312.8319498697917
+      },
+      "Newton-horizontal": {
+        "source": "results/l5_same_node_20261028/solves/Li2-L5/Newton-horizontal/outcome.json",
+        "source_sha256": "2bb4b774945d4b48bd148463369bdc85408efa3cd0dd3b05db4fedecea1f17af",
+        "invocation_sha256": "a6f8c90ea999a3fce685aebd8cbeb1d83acf55b3540e7a5ed8974ec0faa74592",
+        "host": "bigMem0",
+        "affinity": [
+          20,
+          21,
+          22,
+          23,
+          52,
+          53,
+          54,
+          55
+        ],
+        "job_id": "1033465",
+        "initial_sha256": "58670fb8078eeee05dc1d1339aed36abc436bad9fa5c8f0305a6d1c46627d7f7",
+        "reference_sha256": "57ae1912a92777b61e2aea912b2836132d94479fdc5b1e2dc7ee6ee4c333b420",
+        "qualified": true,
+        "endpoint": {
+          "qualified": true,
+          "residual": 1.0463924669393035e-09,
+          "energy_difference": 2.4868995751603507e-14,
+          "projector_distance": 6.656600715506159e-10,
+          "relative_density": 8.11549893282597e-11,
+          "electron_count_error": 6.217248937900877e-15
+        },
+        "precision": {
+          "qualified": true,
+          "kernel_order": null,
+          "kernel_tolerance": 1e-12,
+          "subdivisions": 2,
+          "fmm_tolerance": null,
+          "method": "vgf",
+          "vgf_precompute": "fft",
+          "kernel_control": "DCT_vs_streamed_inverse_FFT_at_fixed_voxel_partition",
+          "raw_residual": {
+            "orbital": 1.0463924667741832e-09,
+            "pair": 5.709605328297478e-12,
+            "gram": 1.8589286951212467e-14,
+            "total": 1.0464080439581521e-09
+          },
+          "rebuilt_residual": {
+            "orbital": 1.046392545453432e-09,
+            "pair": 0.0,
+            "gram": 1.8589286951212467e-14,
+            "total": 1.0463925456185524e-09
+          },
+          "electronic_energy": -16.327389221076807,
+          "energy_difference": 0.0,
+          "coulomb_backend": "b6cf51911c07af192e18abe185b016c0fa6d831b7909181ffaac11773379d5b8",
+          "work": {
+            "model": {
+              "residual_evaluations": 2,
+              "orbital_actions": 3,
+              "time.orbital_action.calls": 3,
+              "time.orbital_action.inclusive_seconds": 28.18034466728568,
+              "time.orbital_action.exclusive_seconds": 28.18034466728568,
+              "time.residual.calls": 2,
+              "time.residual.inclusive_seconds": 76.13261044491082,
+              "time.residual.exclusive_seconds": 16.22647421527654,
+              "reconstructions": 1,
+              "time.pair_rebuild.calls": 1,
+              "time.pair_rebuild.inclusive_seconds": 32.665621363557875,
+              "time.pair_rebuild.exclusive_seconds": 5.135082511231303,
+              "energy_evaluations": 1,
+              "time.energy.calls": 1,
+              "time.energy.inclusive_seconds": 23.91174330469221,
+              "time.energy.exclusive_seconds": 5.577172432094812
+            },
+            "coulomb": {
+              "time.kernel_cache_wait.calls": 0,
+              "time.kernel_cache_wait.inclusive_seconds": 0.0,
+              "time.kernel_cache_wait.exclusive_seconds": 0.0,
+              "time.kernel_cache_load.calls": 0,
+              "time.kernel_cache_load.inclusive_seconds": 0.0,
+              "time.kernel_cache_load.exclusive_seconds": 0.0,
+              "kernel_cache_hits": 0,
+              "projected_families": 4,
+              "integral_families": 4,
+              "source_rhs": 36,
+              "packed_pair_families": 4,
+              "evaluated_source_rhs": 24,
+              "fft_calls": 8,
+              "time.FFT_convolution.calls": 8,
+              "time.FFT_convolution.inclusive_seconds": 38.533168715424836,
+              "time.FFT_convolution.exclusive_seconds": 38.533168715424836,
+              "time.voxel_projection_and_FFT.calls": 8,
+              "time.voxel_projection_and_FFT.inclusive_seconds": 56.57800579164177,
+              "time.voxel_projection_and_FFT.exclusive_seconds": 18.044837076216936,
+              "time.integral_action.calls": 4,
+              "time.integral_action.inclusive_seconds": 58.458220183849335,
+              "time.integral_action.exclusive_seconds": 1.880214392207563,
+              "time.projected_potential.calls": 4,
+              "time.projected_potential.inclusive_seconds": 67.82845638599247,
+              "time.projected_potential.exclusive_seconds": 0.0004049167037010193
+            },
+            "mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 2,
+              "time.solve.calls": 2,
+              "time.solve.inclusive_seconds": 1.4373415242880583,
+              "time.solve.exclusive_seconds": 1.4373415242880583
+            },
+            "pair_mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 17,
+              "time.solve.calls": 17,
+              "time.solve.inclusive_seconds": 21.593893309123814,
+              "time.solve.exclusive_seconds": 21.593893309123814
+            },
+            "auxiliary": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0
+            },
+            "kinetic": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "tensor_preconditions": 0,
+              "time.precondition.calls": 0,
+              "time.precondition.inclusive_seconds": 0.0,
+              "time.precondition.exclusive_seconds": 0.0
+            }
+          },
+          "scope": "Independent endpoint validation, excluded from application timing"
+        },
+        "iterations": 3,
+        "numerical_seconds": 3581.3308500787243,
+        "fft_work": 360.0
+      },
+      "SCF": {
+        "source": "results/required_l5_20261026_v3/solves/Li2-L5/SCF/outcome.json",
+        "source_sha256": "b02e4291efa62a4fac2cda06442e988f87b7a42e6163ec198d08225a01d070c9",
+        "host": "bigMem0",
+        "affinity": [
+          2,
+          3,
+          4,
+          5,
+          34,
+          35,
+          36,
+          37
+        ],
+        "job_id": "1032110",
+        "initial_sha256": "58670fb8078eeee05dc1d1339aed36abc436bad9fa5c8f0305a6d1c46627d7f7",
+        "reference_sha256": "57ae1912a92777b61e2aea912b2836132d94479fdc5b1e2dc7ee6ee4c333b420",
+        "qualified": true,
+        "endpoint": {
+          "qualified": true,
+          "residual": 8.581934707880177e-09,
+          "energy_difference": 3.907985046680551e-14,
+          "projector_distance": 3.68909418253947e-08,
+          "relative_density": 6.419052102596975e-10,
+          "electron_count_error": 3.552713678800501e-15
+        },
+        "precision": {
+          "qualified": true,
+          "kernel_order": null,
+          "kernel_tolerance": 1e-12,
+          "subdivisions": 2,
+          "fmm_tolerance": null,
+          "method": "vgf",
+          "vgf_precompute": "fft",
+          "kernel_control": "DCT_vs_streamed_inverse_FFT_at_fixed_voxel_partition",
+          "raw_residual": {
+            "orbital": 8.581934707879998e-09,
+            "pair": 5.663026993700594e-12,
+            "gram": 1.751261235536978e-15,
+            "total": 8.581936576332473e-09
+          },
+          "rebuilt_residual": {
+            "orbital": 8.581934714144093e-09,
+            "pair": 0.0,
+            "gram": 1.751261235536978e-15,
+            "total": 8.581934714144272e-09
+          },
+          "electronic_energy": -16.327389221076793,
+          "energy_difference": 0.0,
+          "coulomb_backend": "b6cf51911c07af192e18abe185b016c0fa6d831b7909181ffaac11773379d5b8",
+          "scope": "Independent endpoint validation, excluded from application timing"
+        },
+        "iterations": 8,
+        "numerical_seconds": 12167.342495177872,
+        "fft_work": 2436.0
+      }
+    },
+    "BH-L5": {
+      "FAS-H": {
+        "source": "results/bh_l5_bigmem4_20261029/solves/BH-L5/C-response/outcome.json",
+        "source_sha256": "6d6415f02b159e0bddfaa27123d1f90fe791f5ebb786f91ecb19874a96b57197",
+        "invocation_sha256": "a63eac601d752a28e10c720443cd5bd39dc30553614cfda43a2b1f62478d80f7",
+        "host": "bigMem4",
+        "affinity": [
+          0,
+          1,
+          2,
+          3,
+          32,
+          33,
+          34,
+          35
+        ],
+        "job_id": "1034346",
+        "initial_sha256": "b00cef5fe4e68c42109783a245f86725f1700c101227980a79ff4666bb8d83b6",
+        "reference_sha256": "da3fb208764e87009634cceecadffb4c8c4f273d82fee1e263ed87d8b74870be",
+        "qualified": true,
+        "endpoint": {
+          "qualified": true,
+          "residual": 8.071915595629026e-09,
+          "energy_difference": 1.1723955140041653e-13,
+          "projector_distance": 2.146876930763368e-08,
+          "relative_density": 1.2635222671145485e-09,
+          "electron_count_error": 1.0658141036401503e-14
+        },
+        "precision": {
+          "qualified": true,
+          "kernel_order": null,
+          "kernel_tolerance": 1e-12,
+          "subdivisions": 2,
+          "fmm_tolerance": null,
+          "method": "vgf",
+          "vgf_precompute": "fft",
+          "kernel_control": "DCT_vs_streamed_inverse_FFT_at_fixed_voxel_partition",
+          "raw_residual": {
+            "orbital": 8.071915595627539e-09,
+            "pair": 5.9266059041235474e-12,
+            "gram": 4.8990165876949424e-15,
+            "total": 8.071917771361192e-09
+          },
+          "rebuilt_residual": {
+            "orbital": 8.071915541774676e-09,
+            "pair": 0.0,
+            "gram": 4.8990165876949424e-15,
+            "total": 8.071915541776164e-09
+          },
+          "electronic_energy": -26.066263379791124,
+          "energy_difference": 0.0,
+          "coulomb_backend": "b6cf51911c07af192e18abe185b016c0fa6d831b7909181ffaac11773379d5b8",
+          "work": {
+            "model": {
+              "residual_evaluations": 2,
+              "orbital_actions": 3,
+              "time.orbital_action.calls": 3,
+              "time.orbital_action.inclusive_seconds": 29.61261447519064,
+              "time.orbital_action.exclusive_seconds": 29.61261447519064,
+              "time.residual.calls": 2,
+              "time.residual.inclusive_seconds": 77.73546308837831,
+              "time.residual.exclusive_seconds": 17.12387600261718,
+              "reconstructions": 1,
+              "time.pair_rebuild.calls": 1,
+              "time.pair_rebuild.inclusive_seconds": 33.874356631189585,
+              "time.pair_rebuild.exclusive_seconds": 5.5429876912385225,
+              "energy_evaluations": 1,
+              "time.energy.calls": 1,
+              "time.energy.inclusive_seconds": 23.967265728861094,
+              "time.energy.exclusive_seconds": 5.649560306221247
+            },
+            "coulomb": {
+              "time.kernel_cache_wait.calls": 0,
+              "time.kernel_cache_wait.inclusive_seconds": 0.0,
+              "time.kernel_cache_wait.exclusive_seconds": 0.0,
+              "time.kernel_cache_load.calls": 0,
+              "time.kernel_cache_load.inclusive_seconds": 0.0,
+              "time.kernel_cache_load.exclusive_seconds": 0.0,
+              "kernel_cache_hits": 0,
+              "projected_families": 4,
+              "integral_families": 4,
+              "source_rhs": 36,
+              "packed_pair_families": 4,
+              "evaluated_source_rhs": 24,
+              "fft_calls": 8,
+              "time.FFT_convolution.calls": 8,
+              "time.FFT_convolution.inclusive_seconds": 37.265960349701345,
+              "time.FFT_convolution.exclusive_seconds": 37.265960349701345,
+              "time.voxel_projection_and_FFT.calls": 8,
+              "time.voxel_projection_and_FFT.inclusive_seconds": 56.99213329330087,
+              "time.voxel_projection_and_FFT.exclusive_seconds": 19.726172943599522,
+              "time.integral_action.calls": 4,
+              "time.integral_action.inclusive_seconds": 58.677794200368226,
+              "time.integral_action.exclusive_seconds": 1.6856609070673585,
+              "time.projected_potential.calls": 4,
+              "time.projected_potential.inclusive_seconds": 68.00425877422094,
+              "time.projected_potential.exclusive_seconds": 0.00243171863257885
+            },
+            "mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 2,
+              "time.solve.calls": 2,
+              "time.solve.inclusive_seconds": 1.3423737604171038,
+              "time.solve.exclusive_seconds": 1.3423737604171038
+            },
+            "pair_mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 17,
+              "time.solve.calls": 17,
+              "time.solve.inclusive_seconds": 21.612585473805666,
+              "time.solve.exclusive_seconds": 21.612585473805666
+            },
+            "auxiliary": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 0,
+              "time.solve.calls": 0,
+              "time.solve.inclusive_seconds": 0.0,
+              "time.solve.exclusive_seconds": 0.0
+            },
+            "kinetic": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "tensor_preconditions": 0,
+              "time.precondition.calls": 0,
+              "time.precondition.inclusive_seconds": 0.0,
+              "time.precondition.exclusive_seconds": 0.0
+            }
+          },
+          "scope": "Independent endpoint validation, excluded from application timing"
+        },
+        "iterations": 6,
+        "numerical_seconds": 5916.300735005178,
+        "fft_work": 518.4874674479166
+      },
+      "Newton-horizontal": {
+        "source": "results/bh_l5_bigmem4_20261029/solves/BH-L5/Newton-horizontal/outcome.json",
+        "source_sha256": "4c71084bdc47b3e084e8b1d5440ed0d51d38a4431575c4ff647da54ca7e9f28c",
+        "invocation_sha256": "09179693cc3f2bf02f890987f372e7b17aab1d83bf15c87a5bfc65c1b26b44d1",
+        "host": "bigMem4",
+        "affinity": [
+          4,
+          5,
+          6,
+          7,
+          36,
+          37,
+          38,
+          39
+        ],
+        "job_id": "1034347",
+        "initial_sha256": "b00cef5fe4e68c42109783a245f86725f1700c101227980a79ff4666bb8d83b6",
+        "reference_sha256": "da3fb208764e87009634cceecadffb4c8c4f273d82fee1e263ed87d8b74870be",
+        "qualified": true,
+        "endpoint": {
+          "qualified": true,
+          "residual": 1.879585455931797e-11,
+          "energy_difference": 7.105427357601002e-15,
+          "projector_distance": 1.1670218933639844e-10,
+          "relative_density": 5.45040739305151e-12,
+          "electron_count_error": 3.552713678800501e-15
+        },
+        "precision": {
+          "qualified": true,
+          "kernel_order": null,
+          "kernel_tolerance": 1e-12,
+          "subdivisions": 2,
+          "fmm_tolerance": null,
+          "method": "vgf",
+          "vgf_precompute": "fft",
+          "kernel_control": "DCT_vs_streamed_inverse_FFT_at_fixed_voxel_partition",
+          "raw_residual": {
+            "orbital": 1.8795854343273692e-11,
+            "pair": 5.849507974691115e-12,
+            "gram": 2.849819914058901e-15,
+            "total": 1.9685042345928773e-11
+          },
+          "rebuilt_residual": {
+            "orbital": 1.8795658554569302e-11,
+            "pair": 0.0,
+            "gram": 2.849819914058901e-15,
+            "total": 1.8795658770615828e-11
+          },
+          "electronic_energy": -26.066263379791234,
+          "energy_difference": 0.0,
+          "coulomb_backend": "b6cf51911c07af192e18abe185b016c0fa6d831b7909181ffaac11773379d5b8",
+          "work": {
+            "model": {
+              "residual_evaluations": 2,
+              "orbital_actions": 3,
+              "time.orbital_action.calls": 3,
+              "time.orbital_action.inclusive_seconds": 27.87620943877846,
+              "time.orbital_action.exclusive_seconds": 27.87620943877846,
+              "time.residual.calls": 2,
+              "time.residual.inclusive_seconds": 74.58488697465509,
+              "time.residual.exclusive_seconds": 15.895477385260165,
+              "reconstructions": 1,
+              "time.pair_rebuild.calls": 1,
+              "time.pair_rebuild.inclusive_seconds": 33.06531643960625,
+              "time.pair_rebuild.exclusive_seconds": 5.446520488709211,
+              "energy_evaluations": 1,
+              "time.energy.calls": 1,
+              "time.energy.inclusive_seconds": 23.575782645493746,
+              "time.energy.exclusive_seconds": 5.282736653462052
+            },
+            "coulomb": {
+              "time.kernel_cache_wait.calls": 0,
+              "time.kernel_cache_wait.inclusive_seconds": 0.0,
+              "time.kernel_cache_wait.exclusive_seconds": 0.0,
+              "time.kernel_cache_load.calls": 0,
+              "time.kernel_cache_load.inclusive_seconds": 0.0,
+              "time.kernel_cache_load.exclusive_seconds": 0.0,
+              "kernel_cache_hits": 0,
+              "projected_families": 4,
+              "integral_families": 4,
+              "source_rhs": 36,
+              "packed_pair_families": 4,
+              "evaluated_source_rhs": 24,
+              "fft_calls": 8,
+              "time.FFT_convolution.calls": 8,
+              "time.FFT_convolution.inclusive_seconds": 37.844569752924144,
+              "time.FFT_convolution.exclusive_seconds": 37.844569752924144,
+              "time.voxel_projection_and_FFT.calls": 8,
+              "time.voxel_projection_and_FFT.inclusive_seconds": 56.07258078362793,
+              "time.voxel_projection_and_FFT.exclusive_seconds": 18.228011030703783,
+              "time.integral_action.calls": 4,
+              "time.integral_action.inclusive_seconds": 57.90688973572105,
+              "time.integral_action.exclusive_seconds": 1.8343089520931244,
+              "time.projected_potential.calls": 4,
+              "time.projected_potential.inclusive_seconds": 67.38782240822911,
+              "time.projected_potential.exclusive_seconds": 0.00039003510028123856
+            },
+            "mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 2,
+              "time.solve.calls": 2,
+              "time.solve.inclusive_seconds": 1.4019391424953938,
+              "time.solve.exclusive_seconds": 1.4019391424953938
+            },
+            "pair_mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 17,
+              "time.solve.calls": 17,
+              "time.solve.inclusive_seconds": 21.156292824074626,
+              "time.solve.exclusive_seconds": 21.156292824074626
+            },
+            "auxiliary": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0
+            },
+            "kinetic": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "tensor_preconditions": 0,
+              "time.precondition.calls": 0,
+              "time.precondition.inclusive_seconds": 0.0,
+              "time.precondition.exclusive_seconds": 0.0
+            }
+          },
+          "scope": "Independent endpoint validation, excluded from application timing"
+        },
+        "iterations": 4,
+        "numerical_seconds": 6356.623557602987,
+        "fft_work": 666.0
+      },
+      "SCF": {
+        "source": "results/required_l5_20261026_v3/solves/BH-L5/SCF/outcome.json",
+        "source_sha256": "d834988913c1df65b329ff9a9a313ed5307a5c5420973f56ef61e29c2188eea5",
+        "invocation_sha256": "1401322ddf8fbcdfd4786330eff9656a7d02ed9ee4ba8859043467aebb18dff1",
+        "host": "bigMem4",
+        "affinity": [
+          1,
+          2,
+          3,
+          4,
+          33,
+          34,
+          35,
+          36
+        ],
+        "job_id": "1032105",
+        "initial_sha256": "b00cef5fe4e68c42109783a245f86725f1700c101227980a79ff4666bb8d83b6",
+        "reference_sha256": "da3fb208764e87009634cceecadffb4c8c4f273d82fee1e263ed87d8b74870be",
+        "qualified": true,
+        "endpoint": {
+          "qualified": true,
+          "residual": 9.714185809827615e-09,
+          "energy_difference": 1.7763568394002505e-14,
+          "projector_distance": 2.872622189471945e-08,
+          "relative_density": 1.1174102984992024e-09,
+          "electron_count_error": 4.440892098500626e-15
+        },
+        "precision": {
+          "qualified": true,
+          "kernel_order": null,
+          "kernel_tolerance": 1e-12,
+          "subdivisions": 2,
+          "fmm_tolerance": null,
+          "method": "vgf",
+          "vgf_precompute": "fft",
+          "kernel_control": "DCT_vs_streamed_inverse_FFT_at_fixed_voxel_partition",
+          "raw_residual": {
+            "orbital": 9.714185809827456e-09,
+            "pair": 5.808219763443182e-12,
+            "gram": 1.7527167124627417e-15,
+            "total": 9.714187546227065e-09
+          },
+          "rebuilt_residual": {
+            "orbital": 9.714185761009143e-09,
+            "pair": 0.0,
+            "gram": 1.7527167124627417e-15,
+            "total": 9.7141857610093e-09
+          },
+          "electronic_energy": -26.066263379791224,
+          "energy_difference": 0.0,
+          "coulomb_backend": "b6cf51911c07af192e18abe185b016c0fa6d831b7909181ffaac11773379d5b8",
+          "work": {
+            "model": {
+              "residual_evaluations": 2,
+              "orbital_actions": 3,
+              "time.orbital_action.calls": 3,
+              "time.orbital_action.inclusive_seconds": 27.029580594040453,
+              "time.orbital_action.exclusive_seconds": 27.029580594040453,
+              "time.residual.calls": 2,
+              "time.residual.inclusive_seconds": 72.75665323715657,
+              "time.residual.exclusive_seconds": 15.428720824420452,
+              "reconstructions": 1,
+              "time.pair_rebuild.calls": 1,
+              "time.pair_rebuild.inclusive_seconds": 32.396072016097605,
+              "time.pair_rebuild.exclusive_seconds": 5.258930717594922,
+              "energy_evaluations": 1,
+              "time.energy.calls": 1,
+              "time.energy.inclusive_seconds": 23.155729493126273,
+              "time.energy.exclusive_seconds": 5.173373897559941
+            },
+            "coulomb": {
+              "time.kernel_cache_wait.calls": 0,
+              "time.kernel_cache_wait.inclusive_seconds": 0.0,
+              "time.kernel_cache_wait.exclusive_seconds": 0.0,
+              "time.kernel_cache_load.calls": 0,
+              "time.kernel_cache_load.inclusive_seconds": 0.0,
+              "time.kernel_cache_load.exclusive_seconds": 0.0,
+              "kernel_cache_hits": 0,
+              "projected_families": 4,
+              "integral_families": 4,
+              "source_rhs": 36,
+              "packed_pair_families": 4,
+              "evaluated_source_rhs": 24,
+              "fft_calls": 8,
+              "time.FFT_convolution.calls": 8,
+              "time.FFT_convolution.inclusive_seconds": 37.65681581478566,
+              "time.FFT_convolution.exclusive_seconds": 37.65681581478566,
+              "time.voxel_projection_and_FFT.calls": 8,
+              "time.voxel_projection_and_FFT.inclusive_seconds": 55.27028523571789,
+              "time.voxel_projection_and_FFT.exclusive_seconds": 17.613469420932233,
+              "time.integral_action.calls": 4,
+              "time.integral_action.inclusive_seconds": 56.99698140192777,
+              "time.integral_action.exclusive_seconds": 1.7266961662098765,
+              "time.projected_potential.calls": 4,
+              "time.projected_potential.inclusive_seconds": 66.39229525532573,
+              "time.projected_potential.exclusive_seconds": 0.00037910230457782745
+            },
+            "mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 2,
+              "time.solve.calls": 2,
+              "time.solve.inclusive_seconds": 1.3648116225376725,
+              "time.solve.exclusive_seconds": 1.3648116225376725
+            },
+            "pair_mass": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "solves": 17,
+              "time.solve.calls": 17,
+              "time.solve.inclusive_seconds": 20.813983807340264,
+              "time.solve.exclusive_seconds": 20.813983807340264
+            },
+            "auxiliary": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0
+            },
+            "kinetic": {
+              "time.setup.calls": 0,
+              "time.setup.inclusive_seconds": 0.0,
+              "time.setup.exclusive_seconds": 0.0,
+              "tensor_preconditions": 0,
+              "time.precondition.calls": 0,
+              "time.precondition.inclusive_seconds": 0.0,
+              "time.precondition.exclusive_seconds": 0.0
+            }
+          },
+          "scope": "Independent endpoint validation, excluded from application timing"
+        },
+        "iterations": 9,
+        "numerical_seconds": 14010.537560042925,
+        "fft_work": 2940.0
+      }
+    }
+  },
+  "comparison_audits": {
+    "BH-L5": {
+      "source": "results/bh_l5_bigmem4_20261029/COMPARISON.json",
+      "sha256": "01af884d7ca2f41ac8238c8fdb8edae226b14026dbee0cc1caa785c12d31168d",
+      "qualified": true
+    }
+  }
+}

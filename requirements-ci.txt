@@ -1,0 +1,6 @@
+# Versions used for portable numerical regression (Python 3.10 and 3.12).
+numpy==2.1.1
+scipy==1.14.1
+matplotlib==3.10.0
+pytest==9.0.2
+numba==0.65.0

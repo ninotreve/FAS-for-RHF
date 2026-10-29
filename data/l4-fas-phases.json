@@ -1,0 +1,397 @@
+{
+  "cases": [
+    {
+      "case": "LiH-L4",
+      "job_id": "1033536",
+      "input_sha256": "50998121f53acdd22ac0d7df77ec2524462d12084a40115fdbfc5bb874583a47",
+      "reference_sha256": "336df46e45fcf17778754c99e43517a86cb7ad2776a0d4df251734ab737b67ce",
+      "first_cycle_original_residual": 0.0008103822169881967,
+      "first_cycle_replayed_residual": 0.0008103822169881967,
+      "response_triggered": false,
+      "phases": [
+        {
+          "label": "input",
+          "error_bands": {
+            "total": 0.00011968178738327328,
+            "low": 0.00011358698837447931,
+            "high": 7.335993227178299e-07,
+            "middle": 5.361199686076123e-06
+          }
+        },
+        {
+          "label": "pre",
+          "error_bands": {
+            "total": 9.83812114700773e-05,
+            "low": 9.716287822399678e-05,
+            "high": 4.4815838775508324e-08,
+            "middle": 1.173517407304975e-06
+          }
+        },
+        {
+          "label": "post_1.0-raw",
+          "error_bands": {
+            "total": 1.4291297784828387e-06,
+            "low": 1.3574276616893294e-06,
+            "high": 3.457539550847477e-08,
+            "middle": 3.712672128503424e-08
+          }
+        },
+        {
+          "label": "post_1.0",
+          "error_bands": {
+            "total": 1.2458519043536039e-06,
+            "low": 1.232636255213657e-06,
+            "high": 6.865440560315705e-10,
+            "middle": 1.2529105083915076e-08
+          }
+        }
+      ],
+      "source": "results/l4_phase_panels_20261028/cases/LiH-L4/result.json",
+      "source_sha256": "96162c17f0f4d37155cb848524d2b129b23557b88cee0ae823a5b921f2bd52c6"
+    },
+    {
+      "case": "Li2-L4",
+      "job_id": "1033479",
+      "input_sha256": "c73ffbca72efcdc265d6689cea68fb087dfb9e53d3d8fe4f6b63a53bfabd9d9e",
+      "reference_sha256": "334251d42059ff480b24cd83d3c32dc44d841070d95bd5de2478ed64dc9d949d",
+      "first_cycle_original_residual": 0.0009230237215267126,
+      "first_cycle_replayed_residual": 0.0009230237215267126,
+      "response_triggered": false,
+      "phases": [
+        {
+          "label": "input",
+          "error_bands": {
+            "total": 0.00011985400683467434,
+            "low": 0.00010806800998093963,
+            "high": 1.568846433010405e-06,
+            "middle": 1.0217150420724286e-05
+          }
+        },
+        {
+          "label": "pre",
+          "error_bands": {
+            "total": 8.558955579422618e-05,
+            "low": 8.374172771131518e-05,
+            "high": 6.657560802464976e-08,
+            "middle": 1.781252474886282e-06
+          }
+        },
+        {
+          "label": "post_1.0-raw",
+          "error_bands": {
+            "total": 1.086415612852488e-06,
+            "low": 9.901505342445032e-07,
+            "high": 5.006496024542935e-08,
+            "middle": 4.620011836255548e-08
+          }
+        },
+        {
+          "label": "post_1.0",
+          "error_bands": {
+            "total": 8.907299410153735e-07,
+            "low": 8.799918349605798e-07,
+            "high": 5.034031461212216e-10,
+            "middle": 1.0234702908672562e-08
+          }
+        }
+      ],
+      "source": "results/li2_l4_phase_20261028/result.json",
+      "source_sha256": "7762786c621270b3b9be254f4dd9362bff69cc204448c652d6e20d80ecb0e0f6"
+    },
+    {
+      "case": "BeHplus-L4",
+      "job_id": "1033537",
+      "input_sha256": "95af281d5ac4e8cbc39e79c7050c58cbd7aeb202f6442be1ed8d0b13efdd385a",
+      "reference_sha256": "ea6d53aa8ffce2f0290a3988d03675ca1f40331bbac52d8086497883d737706e",
+      "first_cycle_original_residual": 0.011887658282613373,
+      "first_cycle_replayed_residual": 0.011887658282613373,
+      "response_triggered": false,
+      "phases": [
+        {
+          "label": "input",
+          "error_bands": {
+            "total": 0.007240721126977233,
+            "low": 0.007070991162438531,
+            "high": 1.9581428714619057e-05,
+            "middle": 0.00015014853582408493
+          }
+        },
+        {
+          "label": "pre",
+          "error_bands": {
+            "total": 0.006584018377094449,
+            "low": 0.006499235912966608,
+            "high": 4.489859209725845e-06,
+            "middle": 8.029260491811604e-05
+          }
+        },
+        {
+          "label": "post_1.0-raw",
+          "error_bands": {
+            "total": 0.00020669772197037483,
+            "low": 0.00019035113301368783,
+            "high": 5.6605193805131375e-06,
+            "middle": 1.0686069576173803e-05
+          }
+        },
+        {
+          "label": "post_1.0",
+          "error_bands": {
+            "total": 0.00017979697807871318,
+            "low": 0.000174598330512412,
+            "high": 1.9509648806700307e-07,
+            "middle": 5.003551078234198e-06
+          }
+        }
+      ],
+      "source": "results/l4_phase_panels_20261028/cases/BeHplus-L4/result.json",
+      "source_sha256": "bc5f325d46c4148401cdcf68270810e689c1d8ad1fc7089000e281ffad7fedf2"
+    },
+    {
+      "case": "BeH2-L4",
+      "job_id": "1033538",
+      "input_sha256": "377ba6ea6953d72e97be9bf75b9ffac57c5251dfc9944203239002e2021bc729",
+      "reference_sha256": "45f155d2794ed5668ff262949a7cb4fc1878a1cf93c7f0b4262ae91b540bdb97",
+      "first_cycle_original_residual": 0.0009853296484492716,
+      "first_cycle_replayed_residual": 0.0009853296484492716,
+      "response_triggered": false,
+      "phases": [
+        {
+          "label": "input",
+          "error_bands": {
+            "total": 4.584997768295317e-05,
+            "low": 3.797120718536231e-05,
+            "high": 1.5904100343439843e-06,
+            "middle": 6.288360463246864e-06
+          }
+        },
+        {
+          "label": "pre",
+          "error_bands": {
+            "total": 2.5606128735585297e-05,
+            "low": 2.4554267340844716e-05,
+            "high": 3.9872197464473734e-08,
+            "middle": 1.0119891972761176e-06
+          }
+        },
+        {
+          "label": "post_1.0-raw",
+          "error_bands": {
+            "total": 4.903153333940471e-07,
+            "low": 4.1324029264982114e-07,
+            "high": 3.156418718655161e-08,
+            "middle": 4.551085355767449e-08
+          }
+        },
+        {
+          "label": "post_1.0",
+          "error_bands": {
+            "total": 3.140496151485886e-07,
+            "low": 3.0093961872642677e-07,
+            "high": 4.68760610282714e-10,
+            "middle": 1.264123581187901e-08
+          }
+        }
+      ],
+      "source": "results/l4_phase_panels_20261028/cases/BeH2-L4/result.json",
+      "source_sha256": "29017d1f53de4a7b9b3dbb1b10fa8636410821a05efc34d4db2c124e9adaf885"
+    },
+    {
+      "case": "BH-L4",
+      "job_id": "1033539",
+      "input_sha256": "8259ba89cf02c5702d5d3d74170aa1c702a97e7744fc03202537a64257579648",
+      "reference_sha256": "f93235dfb98c23d807962b5a1c39aa5549a331ef8eeca0005c357de29d7eba91",
+      "first_cycle_original_residual": 0.01250106856441419,
+      "first_cycle_replayed_residual": 0.01250106856441419,
+      "response_triggered": false,
+      "phases": [
+        {
+          "label": "input",
+          "error_bands": {
+            "total": 0.00321225303144996,
+            "low": 0.0030395117974849235,
+            "high": 2.3034166018399237e-05,
+            "middle": 0.00014970706794663623
+          }
+        },
+        {
+          "label": "pre",
+          "error_bands": {
+            "total": 0.0025880671634888543,
+            "low": 0.002528291291285564,
+            "high": 1.7335082268385518e-06,
+            "middle": 5.804236397645288e-05
+          }
+        },
+        {
+          "label": "post_1.0-raw",
+          "error_bands": {
+            "total": 0.0001820842849580203,
+            "low": 0.00016872186958983692,
+            "high": 2.928565692685838e-06,
+            "middle": 1.0433849675497475e-05
+          }
+        },
+        {
+          "label": "post_1.0",
+          "error_bands": {
+            "total": 0.00014407815242401355,
+            "low": 0.0001387335636874392,
+            "high": 2.4462167687995836e-07,
+            "middle": 5.099967059694335e-06
+          }
+        }
+      ],
+      "source": "results/l4_phase_panels_20261028/cases/BH-L4/result.json",
+      "source_sha256": "edcba410980033da9223e07495b3555e78011eacb0339aa6ab6a3e09d290c899"
+    },
+    {
+      "case": "H2O-L4",
+      "job_id": "1033540",
+      "input_sha256": "b392bfd509060d3a8537c522c902d8396cf0c3e8f7bdd90a6d87e0bb433f6beb",
+      "reference_sha256": "1284815a2e626cc3f5059eea193ad4fb2b41b534215a321c2cf38b7f73c8c8f8",
+      "first_cycle_original_residual": 0.29363522848239887,
+      "first_cycle_replayed_residual": 0.29363522848239887,
+      "response_triggered": true,
+      "phases": [
+        {
+          "label": "input",
+          "error_bands": {
+            "total": 0.01779299273051252,
+            "low": 0.015946297458025324,
+            "high": 0.00013078361732431223,
+            "middle": 0.001715911655162889
+          }
+        },
+        {
+          "label": "pre",
+          "error_bands": {
+            "total": 0.011467777313108505,
+            "low": 0.010547083061570463,
+            "high": 5.134402882927593e-05,
+            "middle": 0.0008693502227087638
+          }
+        },
+        {
+          "label": "post_1.0-raw",
+          "error_bands": {
+            "total": 0.0005464538207444281,
+            "low": 0.00025579234862637237,
+            "high": 9.20800530362578e-05,
+            "middle": 0.00019858141908179788
+          }
+        },
+        {
+          "label": "post_1.0",
+          "error_bands": {
+            "total": 0.0008993598979612451,
+            "low": 0.0004759587515180025,
+            "high": 5.8505205366449686e-05,
+            "middle": 0.0003648959410767926
+          }
+        }
+      ],
+      "source": "results/l4_phase_panels_20261028/cases/H2O-L4/result.json",
+      "source_sha256": "87d044cdb91b83bb23014aba12dd0cb0702e561cdfc614c4a516288691e251bd"
+    },
+    {
+      "case": "N2-L4",
+      "job_id": "1033541",
+      "input_sha256": "b2f57e56cd2884202c90f93c14bf513c17ce6ed2888ab5026996b0281a2b05e8",
+      "reference_sha256": "339480a01784e36b65fd9087f012800f1620d32b71d430723c2bdc2aea2bace7",
+      "first_cycle_original_residual": 0.02029684202120756,
+      "first_cycle_replayed_residual": 0.02029684202120756,
+      "response_triggered": false,
+      "phases": [
+        {
+          "label": "input",
+          "error_bands": {
+            "total": 0.0038657293445567248,
+            "low": 0.0034435370023283467,
+            "high": 6.294811652583336e-05,
+            "middle": 0.0003592442257025446
+          }
+        },
+        {
+          "label": "pre",
+          "error_bands": {
+            "total": 0.0023063877980159663,
+            "low": 0.002159165491536268,
+            "high": 1.0542628136059707e-05,
+            "middle": 0.0001366796783436378
+          }
+        },
+        {
+          "label": "post_1.0-raw",
+          "error_bands": {
+            "total": 5.4841432063868006e-05,
+            "low": 2.9694400416353216e-05,
+            "high": 7.501122091609509e-06,
+            "middle": 1.764590955590529e-05
+          }
+        },
+        {
+          "label": "post_1.0",
+          "error_bands": {
+            "total": 3.2282231939566844e-05,
+            "low": 2.3988811249598983e-05,
+            "high": 3.9343851875330905e-07,
+            "middle": 7.899982171214559e-06
+          }
+        }
+      ],
+      "source": "results/l4_phase_panels_20261028/cases/N2-L4/result.json",
+      "source_sha256": "001c52ef5b6892e741e39d1552a3c0e965f05089c94b29222ae2e7a98da0faeb"
+    },
+    {
+      "case": "CH4-L4",
+      "job_id": "1033535",
+      "input_sha256": "40dc14a638e08df113b44c633c7fd748c7ae99d1a6957a86534bd2070cf80608",
+      "reference_sha256": "8664f6f9106b15c7a81ff3e14f36bcb132ea8fb86a4762b2157ac33a1fde2d74",
+      "first_cycle_original_residual": 0.008096507641608797,
+      "first_cycle_replayed_residual": 0.008096507641608797,
+      "response_triggered": false,
+      "phases": [
+        {
+          "label": "input",
+          "error_bands": {
+            "total": 0.0017274936076173881,
+            "low": 0.0016583980717544593,
+            "high": 1.0085010280843286e-05,
+            "middle": 5.901052558208587e-05
+          }
+        },
+        {
+          "label": "pre",
+          "error_bands": {
+            "total": 0.0010224674250388708,
+            "low": 0.0010006504441055373,
+            "high": 7.057867215638732e-07,
+            "middle": 2.1111194211769796e-05
+          }
+        },
+        {
+          "label": "post_1.0-raw",
+          "error_bands": {
+            "total": 1.4535471703897424e-05,
+            "low": 9.353281494148652e-06,
+            "high": 1.93043372318108e-06,
+            "middle": 3.251756486567693e-06
+          }
+        },
+        {
+          "label": "post_1.0",
+          "error_bands": {
+            "total": 7.2513522746577796e-06,
+            "low": 6.384926056627229e-06,
+            "high": 3.870924166359744e-08,
+            "middle": 8.27716976366952e-07
+          }
+        }
+      ],
+      "source": "results/l4_phase_panels_20261028/cases/CH4-L4/result.json",
+      "source_sha256": "10f36b38cc3d6d6f64740d7e94d97cec4cf87b531a400660f08a23cb29aab1e6"
+    }
+  ],
+  "scope": "First base FAS cycle; horizontal correction excluded."
+}

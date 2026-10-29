@@ -1,0 +1,524 @@
+{
+  "LiH-L3": {
+    "system": "LiH",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "fas",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "Li2-L3": {
+    "system": "Li2",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "BeHplus-L3": {
+    "system": "BeHplus",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "fas",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "BeH2-L3": {
+    "system": "BeH2",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "fas",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "BH-L3": {
+    "system": "BH",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "H2O-L3": {
+    "system": "H2O",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "N2-L3": {
+    "system": "N2",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "CH4-L3": {
+    "system": "CH4",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "LiH-L4": {
+    "system": "LiH",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "fas",
+    "method_seconds": {
+      "C": 2400,
+      "C-response": 2400,
+      "Newton-horizontal": 3600,
+      "SCF": 5400
+    }
+  },
+  "Li2-L4": {
+    "system": "Li2",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 2400,
+      "C-response": 2400,
+      "Newton-horizontal": 3600,
+      "SCF": 5400
+    }
+  },
+  "BeHplus-L4": {
+    "system": "BeHplus",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "fas",
+    "method_seconds": {
+      "C": 2400,
+      "C-response": 2400,
+      "Newton-horizontal": 3600,
+      "SCF": 5400
+    }
+  },
+  "BeH2-L4": {
+    "system": "BeH2",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "fas",
+    "method_seconds": {
+      "C": 2400,
+      "C-response": 2400,
+      "Newton-horizontal": 3600,
+      "SCF": 5400
+    }
+  },
+  "BH-L4": {
+    "system": "BH",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 2400,
+      "C-response": 2400,
+      "Newton-horizontal": 3600,
+      "SCF": 5400
+    }
+  },
+  "H2O-L4": {
+    "system": "H2O",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 7200,
+      "C-response": 7200,
+      "Newton-horizontal": 7200,
+      "SCF": 10800
+    }
+  },
+  "N2-L4": {
+    "system": "N2",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 7200,
+      "C-response": 7200,
+      "Newton-horizontal": 7200,
+      "SCF": 10800
+    }
+  },
+  "CH4-L4": {
+    "system": "CH4",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 2400,
+      "C-response": 2400,
+      "Newton-horizontal": 3600,
+      "SCF": 5400
+    }
+  },
+  "BH-L3-r1": {
+    "system": "BH",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "BH-L3-r2": {
+    "system": "BH",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "H2O-L4-r1": {
+    "system": "H2O",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 7200,
+      "C-response": 7200,
+      "Newton-horizontal": 7200,
+      "SCF": 10800
+    }
+  },
+  "CH4-rotated-L3": {
+    "system": "CH4",
+    "level": 3,
+    "geometry": "rotated",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "CH4-distorted-L3": {
+    "system": "CH4",
+    "level": 3,
+    "geometry": "distorted",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "LiH-L3--continuation-perturbed": {
+    "system": "LiH",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": "continuation-perturbed",
+    "initialization_method": "robustness",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "LiH-L3--core": {
+    "system": "LiH",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": "core",
+    "initialization_method": "robustness",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "LiH-L3--core-perturbed": {
+    "system": "LiH",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": "core-perturbed",
+    "initialization_method": "robustness",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "H2O-L3--continuation-perturbed": {
+    "system": "H2O",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": "continuation-perturbed",
+    "initialization_method": "robustness",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "H2O-L3--core": {
+    "system": "H2O",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": "core",
+    "initialization_method": "robustness",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "H2O-L3--core-perturbed": {
+    "system": "H2O",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": "core-perturbed",
+    "initialization_method": "robustness",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "CH4-L3--continuation-perturbed": {
+    "system": "CH4",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": "continuation-perturbed",
+    "initialization_method": "robustness",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "CH4-L3--core": {
+    "system": "CH4",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": "core",
+    "initialization_method": "robustness",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "CH4-L3--core-perturbed": {
+    "system": "CH4",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": "core-perturbed",
+    "initialization_method": "robustness",
+    "method_seconds": {
+      "C": 1800,
+      "C-response": 1800,
+      "Newton-horizontal": 1800,
+      "SCF": 1800
+    }
+  },
+  "BH-L3-compression": {
+    "system": "BH",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "SCF": 1800,
+      "SCF-compressed": 1800
+    }
+  },
+  "H2O-L3-compression": {
+    "system": "H2O",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "SCF": 1800,
+      "SCF-compressed": 1800
+    }
+  },
+  "N2-L3-compression": {
+    "system": "N2",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "SCF": 1800,
+      "SCF-compressed": 1800
+    }
+  },
+  "CH4-L3-compression": {
+    "system": "CH4",
+    "level": 3,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "SCF": 1800,
+      "SCF-compressed": 1800
+    }
+  },
+  "BH-L4-compression": {
+    "system": "BH",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "SCF": 5400,
+      "SCF-compressed": 5400
+    }
+  },
+  "H2O-L4-compression": {
+    "system": "H2O",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "SCF": 10800,
+      "SCF-compressed": 10800
+    }
+  },
+  "N2-L4-compression": {
+    "system": "N2",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "SCF": 10800,
+      "SCF-compressed": 10800
+    }
+  },
+  "CH4-L4-compression": {
+    "system": "CH4",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "SCF": 5400,
+      "SCF-compressed": 5400
+    }
+  },
+  "LiH-L4-compression": {
+    "system": "LiH",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "fas",
+    "method_seconds": {
+      "SCF": 5400,
+      "SCF-compressed": 5400
+    }
+  },
+  "Li2-L4-compression": {
+    "system": "Li2",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "scf",
+    "method_seconds": {
+      "SCF": 5400,
+      "SCF-compressed": 5400
+    }
+  },
+  "BeHplus-L4-compression": {
+    "system": "BeHplus",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "fas",
+    "method_seconds": {
+      "SCF": 5400,
+      "SCF-compressed": 5400
+    }
+  },
+  "BeH2-L4-compression": {
+    "system": "BeH2",
+    "level": 4,
+    "geometry": "canonical",
+    "initial_variant": null,
+    "initialization_method": "fas",
+    "method_seconds": {
+      "SCF": 5400,
+      "SCF-compressed": 5400
+    }
+  }
+}

@@ -1,0 +1,54 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+references/
+archive/
+.venv/
+venv/
+*.egg-info/
+
+# Simulation outputs and checkpoints stay local.
+results/
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.pkl
+*.pt
+*.pth
+*.bin
+slurm-*.out
+
+# Keep editable source, not generated PDFs.
+slides/*.pdf
+paper/*.pdf
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.lof
+paper/*.lot
+paper/*.thm
+paper/*.bbl
+paper/*.blg
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls
+
+# Local regression report
+regression-results.xml
+
+# Install the SIAM macro bundle separately; keep third-party local copies untracked.
+paper/siamart*.cls
+paper/siamplain.bst
+
+# Keep manuscript and publication assets outside the public code repository.
+paper/
+*.tex
+*.bib

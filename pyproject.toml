@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hf-fas"
+version = "1.0.0"
+description = "Structure-preserving FAS for real-space closed-shell Hartree--Fock equations"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.14"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+performance = ["numba>=0.59"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.setuptools.packages.find]
+include = ["hf_fas*"]
