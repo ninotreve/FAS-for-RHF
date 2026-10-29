@@ -3,6 +3,7 @@ import numpy as np
 import pytest
 from scipy.linalg import solve
 from scipy.sparse.linalg import LinearOperator
+from scipy.sparse import kron, eye, csr_matrix
 
 from hf_fas.tensor import TensorMesh, TensorQ1Space, TensorCoulomb, TensorCoulombConfig
 from hf_fas.tensor.coulomb import voxel_kernel_samples, voxel_kernel_reference, prism_integral
@@ -10,6 +11,8 @@ from hf_fas.fem import (MolecularFEMModel, MolecularResidual, regression_molecul
                        SCFConfig, solve_molecular_scf, FEMHierarchy, FASConfig)
 from hf_fas.fem.coarse import ReducedCoordinates, CoarseConfig, linear_newton_step
 from hf_fas.experiments.fem_paper import variational_qualification, precision_endpoint_check, gaussian_control
+from hf_fas.tensor.linalg import TensorProduct, TensorSum
+from hf_fas.tensor.space import interpolation
 
 
 @pytest.fixture(scope='module',params=['fft','vgf'])
@@ -36,6 +39,61 @@ def test_consistent_tensor_mass_and_elliptic_inverses(tensor_context):
     rhs=rng.normal(size=(space.n_orbital,3))
     np.testing.assert_allclose(root.solve(rhs),solve(root.toarray(),rhs),atol=2e-13)
     np.testing.assert_allclose(root.solve(rhs,transpose=True),solve(root.toarray().T,rhs),atol=2e-13)
+
+
+def test_orbital_stiffness_stays_tensor_without_cached_expanded_terms():
+    space = TensorQ1Space(TensorMesh(4, 4.))
+    assert isinstance(space.stiffness, TensorSum)
+    mass = space.mass_1d[1:-1, 1:-1]
+    stiffness = space.stiffness_1d[1:-1, 1:-1]
+    terms = []
+    for axis in range(3):
+        factors = [stiffness if i == axis else mass for i in range(3)]
+        terms.append(kron(kron(factors[0], factors[1], format='csr'), factors[2], format='csr'))
+    explicit = sum(terms)
+    vector = np.random.default_rng(29).normal(size=(space.n_orbital, 2))
+    np.testing.assert_allclose(space.stiffness @ vector, explicit @ vector, atol=2e-13)
+    model = MolecularFEMModel(space, regression_molecules()['He'], TensorCoulomb(space))
+    explicit_core = .5*explicit+space.nuclear_matrix(model.molecule.centers, model.molecule.atomic_numbers)
+    np.testing.assert_allclose(model.hcore @ vector, explicit_core @ vector, atol=2e-13)
+    assert all(term._sparse is None for _, term in space.stiffness.terms)
+
+
+@pytest.mark.parametrize('elements', [2, 3])
+def test_nuclear_assembly_matches_direct_quadrature_for_nonsingular_center(elements):
+    space = TensorQ1Space(TensorMesh(elements, 2.))
+    center = np.array([12., 1., -.5])
+    actual = space.nuclear_matrix(center[None], [2.]).toarray()
+    nodes, weights = np.polynomial.legendre.leggauss(space.config.nuclear_order)
+    x = (space.mesh.axis[:-1, None]+space.mesh.spacing*(nodes+1)[None]/2).ravel()
+    b = interpolation(space.mesh.axis, x)[:, 1:-1]
+    evaluation = TensorProduct((b,)*3).toarray()
+    points = np.stack(np.meshgrid(x, x, x, indexing='ij'), axis=-1)
+    w = np.tile(weights*space.mesh.spacing/2, space.mesh.elements)
+    volume = (w[:, None, None]*w[None, :, None]*w[None, None, :]).ravel()
+    potential = -2/np.linalg.norm(points-center, axis=-1).ravel()
+    expected = evaluation.T @ ((volume*potential)[:, None]*evaluation)
+    np.testing.assert_allclose(actual, expected, atol=2e-13)
+
+
+def test_tensor_GS_core_matches_explicit_kinetic_and_nuclear_matrix():
+    from hf_fas.tensor.relaxation import orbital_block_matrix
+    space = TensorQ1Space(TensorMesh(4, 4.))
+    model = MolecularFEMModel(space, regression_molecules()['LiH'], TensorCoulomb(space))
+    state = model.initial_state()
+    count = state.orbitals[0].shape[1]
+    hartree = model.hartree(state.pairs)
+    actual = orbital_block_matrix(space, model.hcore, hartree,
+                                  state.pairs[0], state.multipliers[0]).toarray()
+    fixed = model.hcore+space.potential_matrix(hartree)
+    expected = kron(fixed, eye(count, format='csr'))
+    expected -= kron(space.mass.tocsr(), csr_matrix(state.multipliers[0].T))
+    for i in range(count):
+        for j in range(count):
+            index = csr_matrix(([1.], ([i], [j])), shape=(count, count))
+            expected -= kron(space.potential_matrix(state.pairs[0][:, i, j]), index)
+    np.testing.assert_allclose(actual, expected.toarray(), atol=3e-12)
+    assert all(term._sparse is None for _, term in space.stiffness.terms)
 
 
 def test_L2_product_projection_charge_and_weak_adjoint(tensor_context):

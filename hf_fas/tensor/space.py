@@ -68,7 +68,7 @@ class TensorQ1Space:
         self.mass_1d, self.stiffness_1d = one_dimensional_factors(m, h)
         mv, kv = self.mass_1d[1:-1, 1:-1], self.stiffness_1d[1:-1, 1:-1]
         self.mass = TensorProduct((mv,)*3)
-        self.stiffness = TensorSum(tuple((1., TensorProduct(tuple(kv if j == i else mv for j in range(3)))) for i in range(3))).tocsr()
+        self.stiffness = TensorSum(tuple((1., TensorProduct(tuple(kv if j == i else mv for j in range(3)))) for i in range(3)))
         self.pair_mass = TensorProduct((self.mass_1d,)*3)
         self.pair_stiffness = TensorSum(tuple((1., TensorProduct(tuple(self.stiffness_1d if j == i else self.mass_1d for j in range(3)))) for i in range(3)))
         self.auxiliary = TensorSum(self.pair_stiffness.terms+((self.config.pair_shift, self.pair_mass),))
@@ -210,7 +210,15 @@ class TensorQ1Space:
         basis = hex_basis(sample)
         indices = np.stack(np.meshgrid(*[np.arange(m)]*3, indexing='ij'), axis=-1).reshape(-1, 3)
         corners = np.array(list(product((0, 1), repeat=3)))
-        rows, cols, data = [], [], []
+        n = m-1
+        # The Q1 matrix has the same 27-neighbour pattern as a tensor mass.
+        # Accumulate into that pattern instead of retaining every element's
+        # duplicate COO triplets until the end of the assembly.
+        axis_pattern = diags((np.ones(n-1), np.ones(n), np.ones(n-1)),
+                             (-1, 0, 1), shape=(n, n), format='csr')
+        matrix = TensorProduct((axis_pattern,)*3).tocsr()
+        matrix.sort_indices()
+        matrix.data.fill(0.)
         for first in range(0, len(indices), 128):
             ids = indices[first:first+128]; lower = -self.mesh.half_width+h*ids
             points = lower[:, None]+h*sample[None]
@@ -226,7 +234,14 @@ class TensorQ1Space:
             interior = np.all((nodes > 0) & (nodes < m), axis=-1)
             reduced = np.ravel_multi_index(np.clip(nodes-1, 0, m-2).transpose(2, 0, 1), (m-1,)*3)
             selected = interior[:, :, None] & interior[:, None, :]
-            rows.append(np.broadcast_to(reduced[:, :, None], local.shape)[selected])
-            cols.append(np.broadcast_to(reduced[:, None, :], local.shape)[selected])
-            data.append(local[selected])
-        return coo_matrix((np.concatenate(data), (np.concatenate(rows), np.concatenate(cols))), shape=(self.n_orbital,)*2).tocsr()
+            rows = np.broadcast_to(reduced[:, :, None], local.shape)[selected]
+            row_nodes = np.broadcast_to(nodes[:, :, None, :], local.shape+(3,))[selected]-1
+            col_nodes = np.broadcast_to(nodes[:, None, :, :], local.shape+(3,))[selected]-1
+            first_neighbor = np.maximum(row_nodes-1, 0)
+            neighbors = np.minimum(row_nodes+1, n-1)-first_neighbor+1
+            offsets = col_nodes-first_neighbor
+            position = (matrix.indptr[rows]
+                        +(offsets[:, 0]*neighbors[:, 1]+offsets[:, 1])*neighbors[:, 2]
+                        +offsets[:, 2])
+            np.add.at(matrix.data, position, local[selected])
+        return matrix

@@ -39,9 +39,11 @@ class TensorProduct(LinearOperator):
             result = np.kron(result, f.diagonal())
         return result
 
-    def tocsr(self):
+    def tocsr(self, *, cache=True):
+        if not cache:
+            return kron(kron(self.factors[0], self.factors[1], format='csr'), self.factors[2], format='csr')
         if self._sparse is None:
-            self._sparse = kron(kron(self.factors[0], self.factors[1], format='csr'), self.factors[2], format='csr')
+            self._sparse = self.tocsr(cache=False)
         return self._sparse
 
     def toarray(self):
@@ -66,7 +68,9 @@ class TensorSum(LinearOperator):
         return sum(a*b.diagonal() for a, b in self.terms)
 
     def tocsr(self):
-        return sum(a*b.tocsr() for a, b in self.terms).tocsr()
+        # A temporary Kronecker sum must not retain every expanded term.
+        return sum(a*(b.tocsr(cache=False) if isinstance(b, TensorProduct) else b.tocsr())
+                   for a, b in self.terms).tocsr()
 
     def toarray(self):
         return self.tocsr().toarray()

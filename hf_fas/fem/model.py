@@ -101,8 +101,9 @@ class MolecularFEMModel:
         self.coulomb = coulomb if coulomb is not None else space.make_coulomb()
         if self.coulomb.space is not space:
             raise ValueError('Coulomb and orbital model must share the same FEM context')
-        self.nuclear = space.nuclear_matrix(molecule.centers, molecule.atomic_numbers)
-        self.hcore = .5*space.stiffness+self.nuclear
+        nuclear = space.nuclear_matrix(molecule.centers, molecule.atomic_numbers)
+        stiffness = space.stiffness.tocsr() if hasattr(space.stiffness, 'tocsr') else space.stiffness
+        self.hcore = .5*stiffness+nuclear
 
     def validate(self, state):
         if not (len(state.orbitals) == len(state.pairs) == len(state.multipliers) == len(self.molecule.occupations)):
